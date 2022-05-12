@@ -1,0 +1,90 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      text-decoration: none;
+      list-style: none;
+  }
+:root{
+    --color-background: rgb(202, 238, 247);
+    --color-black: rgb(0, 0, 0);
+    --color-white:#fff;
+    --color-after: rgb(180, 0, 54);
+    --color-error: red;
+    --color-navigation: rgb(14, 83, 129);
+    --color-navigation2: rgb(19, 58, 49);
+    --transition: all 500ms ease-in;
+    --container-width-all: 77%;
+    --container-width-ph: 90%;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    background-color: var(--color-background);
+    color: var(--color-white);
+}
+.container{
+    width: var(--container-width-all);
+    margin: 0 auto;
+}
+section{
+    padding: 6vh 0;
+}
+section h2{
+    margin-bottom: 30px;
+    text-align: center;
+}
+a{
+    color: var(--color-white);
+}
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.btn{
+    display: inline-block;
+    background-color: var(--color-navigation);
+    font-weight: 400;
+    border: 1px solid transparent;
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    transition: var(--transition);
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--color-navigation2);
+
+}
+/* End of general CSS styling*/
+.navContainer{
+    background-color: var(--color-navigation);
+    width: 100vw;
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+.navMenu{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding:0 40px;
+    width: 40vw;
+    justify-content: space-between;
+}
+.brand{
+    font-size: 45px;
+    padding: 12px;
+}
+
