@@ -15,7 +15,7 @@ html {
       list-style: none;
   }
 :root{
-    --color-background: rgb(202, 238, 247);
+    --color-background: rgb(67, 143, 161);
     --color-black: rgb(0, 0, 0);
     --color-white:#fff;
     --color-after: rgb(180, 0, 54);
@@ -25,6 +25,7 @@ html {
     --transition: all 500ms ease-in;
     --container-width-all: 77%;
     --container-width-ph: 90%;
+    --color-btn: rgb(110, 32, 32);
 }
 body{
     font-family: 'Playfair Display', serif;
@@ -38,9 +39,17 @@ body{
 section{
     padding: 6vh 0;
 }
+header{
+    padding: 6vh 0;
+    position: relative;
+    top: 6rem;
+    overflow: hidden;
+    height: 70vh;
+}
 section h2{
     margin-bottom: 30px;
     text-align: center;
+    font-size: 3rem;
 }
 a{
     color: var(--color-white);
@@ -52,7 +61,7 @@ img{
 }
 .btn{
     display: inline-block;
-    background-color: var(--color-navigation);
+    background-color: var(--color-btn);
     font-weight: 400;
     border: 1px solid transparent;
     color: var(--color-white);
@@ -66,7 +75,6 @@ img{
 }
 /* End of general CSS styling*/
 .navContainer{
-    background-color: var(--color-navigation);
     width: 100vw;
     height: 6rem;
     position: fixed;
@@ -75,9 +83,13 @@ img{
     display: flex;
     justify-content: space-between;
 }
+/* Change to scroll when scrolling down */
+.whenScroll{
+    background-color: var(--color-navigation);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.781);
+}
 .navMenu{
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     padding:0 40px;
     width: 40vw;
@@ -87,4 +99,60 @@ img{
     font-size: 45px;
     padding: 12px;
 }
-
+.navMenu a:hover{
+    color: var(--color-after);
+}
+.navMenu a{
+   transition: var(--transition);
+}
+/*              Header               */
+.con-head{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    height: 100%;
+}
+.head-left p{
+ padding: 40px;
+ font-size:1.2rem;
+}
+.head-left h1{
+    font-size: 4rem;
+ }
+ .why{
+position: relative;
+top: 20vh;
+}
+.whyContainer{
+    height: 700px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+.whyImage img{
+    height: 20rem;
+    object-fit: contain;
+    padding: 20px;
+}
+.reason{
+    background-color: rgb(106, 98, 153);
+    height: 100%;
+    padding: 20px;
+    border: 1px solid rgb(119, 107, 119);
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+}
+.reason p{
+    font-size: 20px;
+}
+.whyContainer :hover{
+    background-color: blueviolet;
+    transition: var(--transition);
+}
