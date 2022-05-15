@@ -26,6 +26,7 @@ html {
     --container-width-all: 77%;
     --container-width-ph: 90%;
     --color-btn: rgb(110, 32, 32);
+    --color-forms: linear-gradient(135deg, #060b27, #584391);
 }
 body{
     font-family: 'Playfair Display', serif;
@@ -140,7 +141,7 @@ top: 20vh;
     padding: 20px;
 }
 .reason{
-    background-color: rgb(106, 98, 153);
+    background: var(--color-forms);
     height: 100%;
     padding: 20px;
     border: 1px solid rgb(119, 107, 119);

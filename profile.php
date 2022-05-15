@@ -2,7 +2,13 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/1ca0d34845.js" crossorigin="anonymous"></script>
+    <script src="faizan.js" defer></script>
 </head>
 
 <body>
@@ -88,13 +94,28 @@
         return $data;
     }
     ?>
-  
-    <p id="welcome">Welcome!!!</p><br>
-    <div class="profileContainer">
+      <nav class="navContainer">
+         <div class="container navContainer">
+            <div class="brand">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <a href="index.html">SCHOLIO</a>
+        </div> 
+        <ul class="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Scholarships Directory</a></li>
+            <li><a href="index.html">Contact Us</a></li>
+            <li><a href="profile.php">Profile</a></li>
+            <li><a href="index.html">Login</a></li>
+        </ul>
+         </div>
+    </nav>
+    <div class="container profileContainer">
     <img src="./Images/user-icon.png" id="icon" alt="User" /><br>
     <p id="welcome">Please complete this section for application process</p><br>
         <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            LastName: <input type="text" name="lname" class="profileClass" />
+        <div class="inputWrap">
+        LastName: <input type="text" name="lname" class="profileClass" />
             <span class="error">* <?php echo $lnameErr; ?></span><br>
             FirstName: <input type="text" name="fname" class="profileClass" />
             <span class="error">* <?php echo $fnameErr; ?></span><br>
@@ -110,13 +131,15 @@
             <input type="radio" name="gender" <?php if (isset($gender) && $gender == "other") echo "checked"; ?> value="other">Other
             <span class="error">* <?php echo $genderErr; ?></span>
             <br><br>
-            Write short essay on Career & Goals [300 max]: <br><textarea name="message" rows="10" cols="60"></textarea>
+              
+            Write short essay on Career & Goals [300 max]: <br><textarea name="message" rows="10" cols="60" class="textbox"></textarea>
             <span class="error">* <?php echo $messageErr; ?></span><br><br><br>
-            Write short essay on Award & Achievement [300 max]: <br><textarea name="message" rows="10" cols="60"></textarea>
+            Write short essay on Award & Achievement [300 max]: <br><textarea name="message" rows="10" cols="60"  class="textbox"></textarea>
             <span class="error">* <?php echo $messageErr; ?></span><br><br><br>
-            Write short essay on how geeting this Scholarhsip will help you [300 max]: <br><textarea name="message" rows="10" cols="60"></textarea>
+            Write short essay on how geeting this Scholarhsip will help you [300 max]: <br><textarea name="message" rows="10" cols="60"  class="textbox"></textarea>
             <span class="error">* <?php echo $messageErr; ?></span><br><br><br>
-            <input type="submit" name="submit" value="Submit" id="profileSubmit"> <br><br>
+            <input type="submit" name="submit" value="Submit" id="profileSubmit" class="btn"> <br><br>
+        </div> 
         </form>
     </div>
 </body>
