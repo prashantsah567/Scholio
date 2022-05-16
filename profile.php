@@ -102,7 +102,7 @@
         </div> 
         <ul class="navMenu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About</a></li>
+            <li><a href="aboutus.html">About</a></li>
             <li><a href="index.html">Scholarships Directory</a></li>
             <li><a href="index.html">Contact Us</a></li>
             <li><a href="profile.php">Profile</a></li>
