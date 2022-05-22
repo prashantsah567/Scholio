@@ -8,7 +8,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #410707; */
+  background-color: #410707;
 }
 .about{
   background: url(../images/5.jpeg) no-repeat left;
@@ -20,7 +20,7 @@ body{
 .inner-section{
   width: 55%;
   float: right;
-  background-color: #4695ad;
+  background-color: #495b61;
   padding: 140px;
   box-shadow: 13px 12px 8px rgba(0,0,0,0.3);
 }
