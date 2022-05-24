@@ -1,0 +1,80 @@
+body{
+    background-color:antiquewhite;
+}
+:root{
+    --color-background: rgb(67, 143, 161);
+    --color-black: rgb(0, 0, 0);
+    --color-white:#fff;
+    --color-after: rgb(180, 0, 54);
+    --color-error: red;
+    --color-navigation: rgb(14, 83, 129);
+    --color-navigation2: rgb(19, 58, 49);
+    --transition: all 500ms ease-in;
+    --container-width-all: 77%;
+    --container-width-ph: 90%;
+    --color-btn: rgb(110, 32, 32);
+    --color-forms: linear-gradient(135deg, #060b27, #584391);
+}
+#welcome{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+body{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.profileContainer{
+position: relative;
+top: 20vh;
+max-width: 700px;
+width: 100%;
+background: var(--color-forms);
+padding: 20px;
+border: 1px solid rgb(32, 30, 34);
+border-radius: 12px;
+}
+.inputWrap{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.profileClass{
+    margin: 12px 12px;
+    height: 45px;
+    width: 40% ;
+    font-size:14px;
+    border-radius: 12px;
+    border: 2px solid rgb(32, 30, 34);
+    padding: 12px;
+}
+.error {
+    color: #FF0000;
+}
+#profileSubmit{
+    font-size: 30px;
+    border-radius: 20px;
+}
+#profileSubmit:hover{
+    cursor: pointer;
+}
+#icon{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;  
+}
+.textbox{
+    margin: 12px 12px;
+    height: 15rem;
+    width: 70% ;
+    font-size:14px;
+    border-radius: 12px;
+    border: 2px solid rgb(32, 30, 34);
+    padding: 12px;
+}
