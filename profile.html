@@ -9,6 +9,7 @@
     </style>
     <script src="https://kit.fontawesome.com/1ca0d34845.js" crossorigin="anonymous"></script>
     <script src="faizan.js" defer></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
 </head>
 
 <body>
@@ -94,22 +95,14 @@
         return $data;
     }
     ?>
-      <nav class="navContainer">
-         <div class="container navContainer">
-            <div class="brand">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <a href="index.html">SCHOLIO</a>
-        </div> 
-        <ul class="navMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About</a></li>
-            <li><a href="index.html">Scholarships Directory</a></li>
-            <li><a href="index.html">Contact Us</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="index.html">Login</a></li>
-        </ul>
-         </div>
-    </nav>
+    <div id="nav-placeholder">
+
+    </div>
+    <script>
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+        </script>
     <div class="container profileContainer">
     <img src="./Images/user-icon.png" id="icon" alt="User" /><br>
     <p id="welcome">Please complete this section for application process</p><br>

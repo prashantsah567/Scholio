@@ -11,24 +11,17 @@
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/1ca0d34845.js" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
 </head>
 <body>
-  <nav class="navContainer">
-    <div class="container navContainer">
-       <div class="brand">
-       <i class="fa-solid fa-graduation-cap"></i>
-       <a href="index.html">SCHOLIO</a>
-   </div> 
-   <ul class="navMenu">
-       <li><a href="index.html">Home</a></li>
-       <li><a href="aboutus.html">About</a></li>
-       <li><a href="index.html">Scholarships Directory</a></li>
-       <li><a href="contact.html">Contact Us</a></li>
-       <li><a href="profile.html">Profile</a></li>
-       <li><a href="index.html">Login</a></li>
-   </ul>
-    </div>
-</nav>
+  <div id="nav-placeholder">
+
+  </div>
+  <script>
+      $.get("nav.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+      });
+      </script>
 <div class="about">
   <div class="inner-section">
     <h1>About Us</h1>
