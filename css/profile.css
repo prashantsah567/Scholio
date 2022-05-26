@@ -32,7 +32,7 @@ position: relative;
 top: 20vh;
 max-width: 700px;
 width: 100%;
-background: var(--color-forms);
+background: linear-gradient(135deg, rgb(14, 83, 129), rgb(19, 58, 49));
 padding: 20px;
 border: 1px solid rgb(32, 30, 34);
 border-radius: 12px;
