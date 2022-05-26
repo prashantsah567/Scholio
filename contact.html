@@ -107,6 +107,14 @@
     </div>
   </div>
 </div>
+<div id="foot-placeholder">
+
+</div>
+<script>
+    $.get("foot.html", function(data){
+        $("#foot-placeholder").replaceWith(data);
+    });
+    </script>
 <script src="md.js"></script>
 </body>
 </html>
