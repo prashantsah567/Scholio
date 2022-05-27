@@ -237,17 +237,21 @@ tbody{
     color: rgb(210, 226, 216);
 }
 .onetone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     vertical-align: top;
     color: #fff;
     padding: 20px 12px;
     gap: 12px;
+    align-items: center;
+    display: flex;
 }
-footer {
+.foot {
+   height: 15rem;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    top: 6rem;
+    align-items: center;
+    justify-content: center;
+    top: 4rem;
     clear: both;
     text-align: center;
     margin: 0px auto;
