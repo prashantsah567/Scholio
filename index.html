@@ -63,7 +63,15 @@
         </div>
 
     </section>
- 
+    <div id="foot-placeholder">
+
+    </div>
+    <script>
+        $.get("foot.html", function(data){
+            $("#foot-placeholder").replaceWith(data);
+        });
+        </script>
 </body>
+
 
 </html>

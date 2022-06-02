@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <?php
     //form validation
     // define variables and set to empty values
@@ -135,6 +134,14 @@
         </div> 
         </form>
     </div>
+   
 </body>
+<div id="foot-placeholder">
 
+</div>
+<script>
+    $.get("foot.html", function(data){
+        $("#foot-placeholder").replaceWith(data);
+    });
+    </script>
 </html>

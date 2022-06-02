@@ -5,15 +5,11 @@
 }
 body{
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #410707;
 }
 .about{
   background: url(../images/5.jpeg) no-repeat left;
   background-size:45%;
-  /* background-color: #520606; */
   overflow: hidden;
   padding: 100px 0;
 }

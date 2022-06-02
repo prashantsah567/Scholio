@@ -20,14 +20,13 @@ body{
     font-weight: bold;
     text-align: center;
 }
-body{
+
+.profileContainer{
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-}
-
-.profileContainer{
+    flex-direction: column;
 position: relative;
 top: 20vh;
 max-width: 700px;
@@ -36,6 +35,8 @@ background: linear-gradient(135deg, rgb(14, 83, 129), rgb(19, 58, 49));
 padding: 20px;
 border: 1px solid rgb(32, 30, 34);
 border-radius: 12px;
+overflow: hidden ;
+clear: both;
 }
 .inputWrap{
 display: flex;
@@ -77,4 +78,8 @@ align-items: center;
     border-radius: 12px;
     border: 2px solid rgb(32, 30, 34);
     padding: 12px;
+}
+footer{
+    position: relative;
+    top: 10rem;
 }
